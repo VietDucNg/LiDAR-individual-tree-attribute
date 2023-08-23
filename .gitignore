@@ -4,6 +4,6 @@
 .Ruserdata
 /renv
 /student_scripts
-/00_data/other_LiDAR_soures
+/data/other_LiDAR_soures
 LiDAR_processing.Rproj
 LiDAR_processing.zip
