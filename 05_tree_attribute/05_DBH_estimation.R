@@ -6,7 +6,7 @@
 
 
 # load matched data
-data.df = readRDS("01_result/data.RDS")
+data.df = readRDS("result/data.RDS")
 
 # Plot histogram
 par(mar=c(4,4,4,1))

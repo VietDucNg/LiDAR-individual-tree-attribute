@@ -12,10 +12,10 @@
 
 
 # load inv.df
-inv.df = readRDS(file = "00_data/inv_Mollergrab.RDS")
+inv.df = readRDS(file = "data/inv_Mollergrab.RDS")
 
 # load crowns.spdf
-crowns.spdf = shapefile("01_result/Crowns.shp")
+crowns.spdf = shapefile("result/Crowns.shp")
 
 # Get data component from crowns.spdf
 pred.df = crowns.spdf@data

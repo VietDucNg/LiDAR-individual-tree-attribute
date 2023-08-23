@@ -6,7 +6,7 @@
 
 
 # load matched data
-data.df = readRDS("01_result/data.RDS")
+data.df = readRDS("result/data.RDS")
 
 # Plot the estimated H distribution
 hist(data.df$H_pred, breaks=seq(5, 40, 1), xlab="H [m]", ylim=c(0, 55))

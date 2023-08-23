@@ -6,10 +6,10 @@
 
 
 # import LiDAR data
-las = readLAS("00_data/pc_Mollergrab.las")
+las = readLAS("data/pc_Mollergrab.las")
 
 # load aoi shapefile
-aoi.sf = st_read("00_data/aoi_Mollergrab.shp")
+aoi.sf = st_read("data/aoi_Mollergrab.shp")
 
 
 ##############################
@@ -129,4 +129,4 @@ hist(filter_ground(norm.las2)$Z, breaks = seq(-10, 10, 0.05),
 
 # save preprocessed point cloud if necessary
 # the preprocessed point cloud was also provided in 01_result folder
-# saveRDS(norm.las,file = "01_result/pc_Mollergrab_prepro.RDS")
+# saveRDS(norm.las,file = "result/pc_Mollergrab_prepro.RDS")

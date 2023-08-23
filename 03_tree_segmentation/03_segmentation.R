@@ -6,10 +6,10 @@
 
 
 # import pre-processed LiDAR data
-las = readRDS("01_result/pc_Mollergrab_prepro.RDS")
+las = readRDS("result/pc_Mollergrab_prepro.RDS")
 
 # load inventory data
-inv.df = readRDS(file = "00_data/inv_Mollergrab.RDS")
+inv.df = readRDS(file = "data/inv_Mollergrab.RDS")
 
 
 #############
@@ -111,7 +111,7 @@ plot(las.li12, size=2, color="treeID")
 # The algorthm was presented by Ferraz et al. (2012)
 # Leon Steinmeier provides it in the crownsegmentr package
 
-las.ams3d = readRDS(file = "01_result/pc_Mollergrab_prepro.rds")
+las.ams3d = readRDS(file = "result/pc_Mollergrab_prepro.rds")
 
 # count tree detected
 length(unique(las.ams3d@data[["treeID"]]))
@@ -147,10 +147,10 @@ plot(crowns.spdf, add=T)
 plot(treeTop.spdf, add=T, pch=21, bg="white", cex=0.5)
 
 # Save the crown polygons as shapefile
-# shapefile(crowns.spdf, "01_result/Crowns.shp", overwrite=T)
+# shapefile(crowns.spdf, "result/Crowns.shp", overwrite=T)
 
 # Save the tree top points as shapefile
-# shapefile(treeTop.spdf, "01_result/treeTop.shp", overwrite=T)
+# shapefile(treeTop.spdf, "result/treeTop.shp", overwrite=T)
 
 # Save the CHM as raster file
-# writeRaster(chm.ras,"01_result/chm.tif", overwrite=T)
+# writeRaster(chm.ras,"result/chm.tif", overwrite=T)
