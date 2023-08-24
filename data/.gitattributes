@@ -1,0 +1,1 @@
+pc_mollergrab.laz filter=lfs diff=lfs merge=lfs -text
