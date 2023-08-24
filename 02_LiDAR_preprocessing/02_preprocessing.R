@@ -6,7 +6,7 @@
 
 
 # import LiDAR data
-las = readLAS("data/pc_Mollergrab.las")
+las = readLAS("data/pc_Mollergrab.laz")
 
 # load aoi shapefile
 aoi.sf = st_read("data/aoi_Mollergrab.shp")
