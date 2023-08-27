@@ -1,5 +1,5 @@
 # LiDAR-individual-tree-attribute
-Materials for the course of virtual forest twins based on marteloscope point cloud data in [__VirtualForest project__](https://virtualforests.eu/)
+Materials for the course of **virtual forest twins based on marteloscope point cloud data** in [VirtualForest project](https://virtualforests.eu/). The materials prepared by Viet Nguyen ([Eberswalde University for Sustainable Development](https://www.hnee.de/en/University/EberswaldeUniversity-for-Sustainable-Development-E1145.htm)) with R scripts was compiled with reference to materials from the course LiDAR data collection and analysis taught by Dr. Nikolai Knapp ([Thuenen Institute of Forest Ecosystems](https://www.thuenen.de/en/institutes/forest-ecosystems)).
 
 ![point cloud image](images/raw_las.png)
 
