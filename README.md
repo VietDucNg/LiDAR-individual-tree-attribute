@@ -1,7 +1,7 @@
 # LiDAR-individual-tree-attribute
 Materials for the course of virtual forest twins based on marteloscope point cloud data in [__VirtualForest project__](https://virtualforests.eu/)
 
-![point cloud image](images/01_rawPC1.png)
+![point cloud image](images/raw_las.png)
 
 The tutorial provides guidance on estimating individual tree attributes based on marteloscope point cloud data. The acquisition of basic tree attributes, including tree height, DBH, and crown area, contributes to the development of virtual forest twins. The tutorial includes 05 lectures along with R scripts: 
 
@@ -32,12 +32,12 @@ The section provide guidance to preprocess the raw point cloud data, including:
 3. Point cloud filtering to remove noises or outliers
 4. Terain normalization
 
-![preprocessed pc](images/05_thinned_Las.png)
+![preprocessed pc](images/preprocessed_las.png)
 
 ## 4. Individual tree segmentation
 For extracting tree attributes at a single tree scale, a segmentation of tree crowns is required. The Individual Tree Segmentation (ITS) classifies LiDAR point clouds into single trees with corresponding IDs. After segmentation, each point has an ID corresponding to the tree it belongs to. In this section, raster-based and point cloud-based segmentation algorithms were introduced.
 
-![segmented pc](images/08_pc_segment.png)
+![segmented pc](images/segmented_las.png)
 
 ## 5. Tree attribute estimation
 After individual tree segmentation, tree attributes at single tree level can be calculated. In this section, methods to estimate some basic tree inventory attributes were introduced:
@@ -47,4 +47,4 @@ After individual tree segmentation, tree attributes at single tree level can be 
 3. Tree location as barycenter of all points in each segmented tree
 4. DBH estimate using allometry
 
-![Virtualforest logo](<images/Virtual forests logo.png>)
+![Virtualforest logo](<images/Virtualforests_logo.png>)
